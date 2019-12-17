@@ -1,3 +1,6 @@
 --env SAMPLE	--input INPUT_FQ	--output-recursive OUTPUT_DIR	--input REFERENCE
-COLO829	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/COLO829/COLO829_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/COLO829	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
-COLO829BL	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/COLO829BL/COLO829BL_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/COLO829BL	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
+BL2009	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/BL2009/BL2009_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/BL2009	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
+H2009	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/H2009/H2009_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/H2009	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
+HCC1954	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/HCC1954/HCC1954_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/HCC1954	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
+HCC1954BL	s3://eva-bucket-tokyo/kataoka-lab/long_read_sequencing/cell-line/rawdata/HCC1954BL/HCC1954BL_merged.fastq	s3://chibaken-ana-tokyo/ecsub/out/191126_minimap2_out/HCC1954BL	s3://chibaken-ana-tokyo/_GRCh38/minimap2-2.17/GRCh38.d1.vd1.mmi
+
