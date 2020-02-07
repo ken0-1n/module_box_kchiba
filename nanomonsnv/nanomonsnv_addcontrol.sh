@@ -19,7 +19,5 @@ mkdir -p ${OUTPUT_DIR}
 #     i=`expr $i + 1`;
 # done
 
-# echo "nanomonsnv add_control ${INPUT_FILE} ${OUTPUT_FILE} ${REFERENCE} ${CONTROL_BAMS} ${OPTION}"
-echo "nanomonsnv add_control ${INPUT_FILE} ${OUTPUT_FILE} ${REFERENCE} ${CONTROL_BAM1} ${CONTROL_BAM2} ${OPTION}"
-nanomonsnv add_control ${INPUT_FILE} ${OUTPUT_FILE} ${REFERENCE} ${CONTROL_BAM1} ${CONTROL_BAM2} ${OPTION}
+nanomonsnv add_control ${INPUT_FILE} ${OUTPUT_FILE} ${REFERENCE} ${CONTROL_BAM1} ${CONTROL_BAM2} ${CONTROL_BAM3} ${CONTROL_BAM4} ${OPTION}
 
