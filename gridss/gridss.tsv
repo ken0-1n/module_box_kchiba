@@ -1,0 +1,2 @@
+--output-recursive OUTPUT_DIR	--env VCF	--env ASSEMBLE	--input-recursive REFERENCE_DIR	--env REFERENCE_FILE	--input BAM	--input BAI
+s3://chibaken-ana-tokyo/gridss-test/5929	5929_gridss-result.vcf	5929_gridss-assembly.bam	s3://genomon-bucket/_GRCh37/reference/GRCh37	GRCh37.fa	s3://chibaken-ana-tokyo/gridss/test_sample/5929_tumor.markdup.bam	s3://chibaken-ana-tokyo/gridss/test_sample/5929_tumor.markdup.bam.bai
