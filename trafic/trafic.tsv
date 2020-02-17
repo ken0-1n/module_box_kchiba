@@ -1,0 +1,2 @@
+--output-recursive OUTPUT_DIR	--input TUMOR_BAM	--input NORMAL_BAM	--input CONFIG_YAML
+s3://chibaken-ana-tokyo/trafic/output	s3://chibaken-ana-tokyo/trafic/dataset/tumour.bam	s3://chibaken-ana-tokyo/trafic/dataset/normal.bam	s3://chibaken-ana-tokyo/trafic/dataset/config_ecsub.yaml
