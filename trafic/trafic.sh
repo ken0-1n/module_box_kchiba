@@ -5,5 +5,9 @@ set -o nounset
 
 mkdir -p ${OUTPUT_DIR}
 
+OUTPUT_DIR_TMP=$(echo $OUTPUT_DIR | sed -e 's/\//\\\//g')
+sed -i "s/\/trafic_output/$OUTPUT_DIR_TMP/" /trafic/workflows/SnakefileTraficHg19
+
 /usr/bin/snakemake --snakefile /trafic/workflows/SnakefileTraficHg19 --configfile ${CONFIG_YAML} --printshellcmds --jobs --verbose 
+
 
