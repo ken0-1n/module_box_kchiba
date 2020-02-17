@@ -1,4 +1,4 @@
-FROM gridss/gridss:2.7.3
+FROM gridss/gridss:2.8.0
 
 ENTRYPOINT []
 
