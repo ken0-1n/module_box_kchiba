@@ -1,0 +1,2 @@
+--output-recursive OUTPUT_DIR	--input TUMOR_BAM	--input NORMAL_BAM	--input CONFIG_YAML
+s3://chibaken-ana-tokyo/ecsub/output/200217_PG2778_novaseq_WGS_trafic/NCI-H2009	s3://eva-bucket-tokyo/kataoka-lab/wgs/cell-line/GRCh37/genomon_pipeline_cloud_v0.3.0/bam/NCI-H2009/NCI-H2009.markdup.bam	s3://eva-bucket-tokyo/kataoka-lab/wgs/cell-line/GRCh37/genomon_pipeline_cloud_v0.3.0/bam/NCI-BL2009/NCI-BL2009.markdup.bam	s3://chibaken-ana-tokyo/trafic/dataset/config_NCI-H2009.yaml
