@@ -1,0 +1,2 @@
+--input INPUT_VCF	--output OUTPUT_VCF	--output OUTPUT_TBI
+s3://chibaken-ana-tokyo/gridss-test/5929/5929_gridss-result.vcf	s3://chibaken-ana-tokyo/gridss-test/5929/5929_gridss-result.somatic.vcf.bgz	s3://chibaken-ana-tokyo/gridss-test/5929/5929_gridss-result.somatic.vcf.bgz.tbi
