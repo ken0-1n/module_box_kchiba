@@ -13,7 +13,10 @@ bash gridss.sh \
     -o ${OUTPUT_DIR}/${VCF}  \
     -a ${OUTPUT_DIR}/${ASSEMBLE} \
     -r ${REFERENCE_DIR}/${REFERENCE_FILE}  \
-    -j gridss-2.7.3-gridss-jar-with-dependencies.jar \
-    -t 4
-    ${BAM}
+    -j ${GRIDSS_JAR} \
+    -t 8 \
+    -w ${OUTPUT_DIR} \
+    --picardoptions VALIDATION_STRINGENCY=LENIENT \
+    ${NORMAL_BAM} \
+    ${TUMOR_BAM}
 
