@@ -1,0 +1,20 @@
+FROM ubuntu:18.04
+
+RUN apt-get update -y 
+RUN apt-get install -y bzip2 g++ zlib1g-dev libbz2-dev liblzma-dev libffi-dev libncurses5-dev libcurl4-gnutls-dev libssl-dev curl make cmake wget python3-all-dev python-virtualenv
+
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+
+RUN apt-get install -y git-lfs
+
+RUN mkdir -p /tools 
+
+RUN cd /tools
+RUN wget https://github.com/nanoporetech/medaka/archive/v0.11.5.tar.gz
+RUN tar xzvf v0.11.5.tar.gz
+RUN rm v0.11.5.tar.gz
+RUN cd medaka-0.11.5
+RUN make && make install
+
+CMD /bin/bash
+

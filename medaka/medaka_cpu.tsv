@@ -1,0 +1,2 @@
+--input REFERENCE	--input BAM	--input BAI	--output-recursive OUTPUT_DIR	--env THREADS	--env MODEL_INITIAL	--env MODEL_FINAL	--env REGION
+s3://chibaken-ana-oregon/GDC.GRCh38.d1.vd1/reference/GRCh38.d1.vd1.fa	s3://ecsub/out/200210_minimap2_out/HG002_GIAB.bam	s3://ecsub/out/200210_minimap2_out/HG002_GIAB.bam.bai	s3://ecsub/out/200221_medaka_out/BRAF	8	r941_min_high_g303	r941_min_high_g303	chr7:140730665-140924928
