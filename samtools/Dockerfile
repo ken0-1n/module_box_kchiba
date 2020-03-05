@@ -26,6 +26,16 @@ cd htslib-1.9 && \
 make && \
 make install
 
+RUN cd /tools && \
+echo "build bcftools-1.9" && \
+wget -nc https://sourceforge.net/projects/samtools/files/samtools/1.9/bcftools-1.9.tar.bz2 && \
+tar xvf bcftools-1.9.tar.bz2 && \
+rm -f bcftools-1.9.tar.bz2 && \
+cd bcftools-1.9 && \
+./configure && \
+make && \
+make install
+
 RUN echo "export LD_LIBRARY_PATH=/usr/local/lib" >> /root/.bashrc
 
 CMD ["/bin/bash"]
