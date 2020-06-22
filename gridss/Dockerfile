@@ -1,4 +1,4 @@
-FROM gridss/gridss:2.8.0
+FROM gridss/gridss:2.9.4
 
 RUN apt-get -y update
 RUN apt-get install -y wget
