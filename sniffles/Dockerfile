@@ -9,7 +9,7 @@ RUN apt-get install -y rsync wget
 
 RUN mkdir -p /tools && \
 cd /tools && \
-wget https://github.com/fritzsedlazeck/Sniffles/archive/1.0.12a.tar.gz -O Sniffles.tar.gz && \
+wget https://github.com/fritzsedlazeck/Sniffles/archive/v1.0.12a.tar.gz -O Sniffles.tar.gz && \
 tar xzvf Sniffles.tar.gz && \
 cd Sniffles-1.0.12a && \
 mkdir -p build && \
@@ -17,7 +17,7 @@ cd build && \
 cmake .. && \
 make
 
-ENV PATH $PATH:/tools/Sniffles-1.0.12a/bin/sniffles-core-1.0.12a
+ENV PATH $PATH:/tools/Sniffles-1.0.12a/bin/sniffles-core-1.0.12
 
 CMD ["/bin/bash"]
 
