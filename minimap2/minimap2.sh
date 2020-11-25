@@ -4,7 +4,7 @@ OUTPUT_BAM=${OUTPUT_DIR}/${SAMPLE}.bam
 
 mkdir -p ${OUTPUT_DIR}
 
-minimap2 -ax map-ont -t 8 -p 0.1 ${REFERENCE} ${INPUT_FQ} | samtools view -Shb > ${OUTPUT_BAM}.unsorted
+minimap2 -ax map-ont -t 8 -p 0.1 ${MINIMAP2_OPTION} ${REFERENCE} ${INPUT_FQ} | samtools view -Shb > ${OUTPUT_BAM}.unsorted
 
 rm -rf ${INPUT_FQ}
 
