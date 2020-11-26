@@ -4,13 +4,7 @@ set -xv
 set -o errexit
 set -o nounset
 
-bam_file=$1
-output_prefix=$2
-parse_option=""
-if [ $# -eq 3 ]; then 
-    parse_option=$3
-fi
+mkdir -p ${OUTPUT_DIR}
 
-nanomonsv parse $parse_option $bam_file $output_prefix
-
+nanomonsv parse ${OPTIONS} ${INPUT_DIR}/${SAMPLE}.bam ${OUTPUT_DIR}/${SAMPLE}
 
